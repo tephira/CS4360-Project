@@ -47,6 +47,10 @@ void main() {
 
 void ignoreOverflowErrors(FlutterErrorDetails details,
     {bool forceReport = false}) {
+  /* 
+  Date: 10/23/2022
+  Reference: https://remelehane.dev/posts/widget-testing-rendeflex-overflow/
+   */
   bool isOverflowError = false;
 
   var exception = details.exception;
